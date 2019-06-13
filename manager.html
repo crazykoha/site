@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Менеджер</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+  <div class="grid top">
+    <a href="#" class="logo">
+      <span>Донбасс</span>
+      <span>InTime</span>
+    </a>
+    <ul class="menu">
+      <li><a href="#">Главная</a></li>
+      <li><a href="#">Узнать стоимость</a></li>
+      <li><a href="#">Заказать доставку</a></li>
+      <li><a href="#">Помощь</a></li>
+    </ul>
+    <div class="auth">
+      <a href="#">Войти</a>
+    </div>
+    <a href="#" class="lang"><img src="images/rus.png" alt=""></a>
+  </div>
+  <div class="cards">
+    <div class="card__names">
+      <span>Ссылка на товар</span>
+      <span>Количество товара</span>
+      <span>Имя и Фамилия</span>
+      <span>Номер телефона</span>
+      <span>E-mail</span>
+      <span>Номер паспорта</span>
+      <span>Счет</span>
+    </div>
+    <div class="card">
+      <a href="#">Ссылка на товар ссылка на товар</a>
+      <span>22</span>
+      <span>Имя Фамилия</span>
+      <span>Номер телефона</span>
+      <span>e-mail</span>
+      <span>Номер паспорта</span>
+      <button class="jsOpenDelivery">Сформировать счет</button>
+    </div>
+    <div class="card">
+      <a href="#">Ссылка на товар ссылка на товар</a>
+      <span>22</span>
+      <span>Имя Фамилия</span>
+      <span>Номер телефона</span>
+      <span>e-mail</span>
+      <span>Номер паспорта</span>
+      <button class="jsOpenDelivery">Сформировать счет</button>
+    </div>
+    <div class="card">
+      <a href="#">Ссылка на товар ссылка на товар</a>
+      <span>22</span>
+      <span>Имя Фамилия</span>
+      <span>Номер телефона</span>
+      <span>e-mail</span>
+      <span>Номер паспорта</span>
+      <button class="jsOpenDelivery">Сформировать счет</button>
+    </div>
+  </div>
+  <div class="modal jsShowModal">
+    <div class="modal__overlay jsCloseModal"></div>
+    <form class="modal__form">
+      <h3>Оформить товар</h3>
+      <input type="text" name="name" placeholder="Название товара">
+      <input type="number" name="sum" placeholder="Количество товара">
+      <input type="text" name="nameMag" placeholder="Название магазина">
+      <input type="text" name="order" placeholder="Откуда заказ">
+      <input type="tel" name="country" placeholder="Страна магазина">
+      <input type="email" name="score" placeholder="Счет">
+      <button type="submit">Сформировать счет</button>
+    </form>
+  </div>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
