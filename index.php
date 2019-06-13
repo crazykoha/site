@@ -3,12 +3,7 @@
 use classes\DBConnection;
 
 include 'classes/Order.php';
-
-//$order=\classes\Order::findById(1);
-//$order->name='fsdfds';
-$order=new \classes\Order(1, null, 3);
-$order->save();
-//print_r($order);
+include 'classes/User.php';
 ?>
 
 <!DOCTYPE html>
@@ -32,7 +27,9 @@ $order->save();
 			<li><a href="#!">Помощь</a></li>
 		</ul>
 		<div class="auth">
-			<a href="#!">Войти</a>
+            <?php if($user=\classes\User::getCurrentUser()):?>
+            <?=$user->first_name?>
+            <?php endif ?>
 		</div>
 		<a href="#!" class="lang"><img src="images/rus.png" alt=""></a>
 	</div>
